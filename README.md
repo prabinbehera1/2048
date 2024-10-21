@@ -3,7 +3,6 @@
 This guide will walk you through the process of deploying the popular 2048 game on AWS Elastic Beanstalk using a Docker container. AWS Elastic Beanstalk is a fully managed service that makes it easy to deploy and run applications in multiple languages.
 
 ## 2048 game
-click the link to play : https://yuva19102003.github.io/2048-game.github.io/
 
 <img src="2048win.jpg"/>
 
