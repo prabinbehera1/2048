@@ -22,7 +22,7 @@ Before you begin, make sure you have the following:
 Start by cloning {master.zip} the 2048 game repository to your local machine:
 
 ```bash
-https://github.com/yuva19102003/2048/archive/refs/heads/master.zip
+https://github.com/prabinbehera1/2048/archive/refs/heads/master.zip
 ```
 
 ## Step 2: Create a Dockerfile
@@ -34,7 +34,7 @@ FROM ubuntu:22.04
 RUN apt-get update
 RUN apt-get install -y nginx zip curl
 RUN echo "daemon off;" >>/etc/nginx/nginx.conf
-RUN curl -o /var/www/html/master.zip -L https://github.com/yuva19102003/2048/archive/refs/heads/master.zip
+RUN curl -o /var/www/html/master.zip -L https://github.com/prabinbehera1/2048/archive/refs/heads/master.zip
 RUN cd /var/www/html/ && unzip master.zip && mv 2048-master/* . && rm -rf 2048-master master.zip
 EXPOSE 80
 CMD ["/usr/sbin/nginx","-c","/etc/nginx/nginx.conf"]
